@@ -1,0 +1,210 @@
+/* 📌 Dashboard Main Container */
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e3f2fd;
+}
+
+/* 📌 Sidebar */
+.dashboardSidebar {
+  width: 230px;
+  background: linear-gradient(135deg, #6a0572, #38036a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease-in-out;
+}
+
+.dashboardSidebar:hover {
+  width: 250px;
+}
+
+.dashboardSidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.dashboardSidebar li {
+  margin-bottom: 12px;
+}
+
+.dashboardSidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 12px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8e44ad, #6a0572);
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.dashboardSidebar a:hover,
+.dashboardSidebar a.active {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  transform: translateX(5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 📌 Logout Button */
+.logoutButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #d9534f, #c9302c);
+  color: white;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logoutButton:hover {
+  background: linear-gradient(135deg, #ff4444, #d32f2f);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logoutButton:active {
+  background: linear-gradient(135deg, #b71c1c, #880e4f);
+  transform: scale(0.95);
+}
+
+/* 📌 Dashboard Content */
+.dashboardContent {
+  flex: 1;
+  padding: 25px;
+  background-color: #f1f8e9;
+}
+
+/* 📌 Admin Details */
+.adminDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.adminPhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 4px solid #ff9800;
+  transition: transform 0.3s ease-in-out;
+}
+
+.adminPhoto:hover {
+  transform: scale(1.1);
+}
+
+.adminName {
+  font-size: 1.8em;
+  color: #333;
+  font-weight: bold;
+}
+
+.adminInfo {
+  font-size: 1em;
+  color: #666;
+}
+
+/* 📌 Statistics Section */
+.statsContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.statsCard {
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.statsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Pending */
+.pending {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+/* Solved */
+.solved {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+/* Rejected */
+.rejected {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .dashboardContainer {
+    flex-direction: column;
+  }
+
+  .dashboardSidebar {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .dashboardSidebar:hover {
+    width: 100%;
+  }
+
+  .dashboardContent {
+    padding: 15px;
+  }
+
+  .statsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statsCard {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .adminDetails {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .adminPhoto {
+    margin-bottom: 10px;
+  }
+
+  .logoutButton {
+    width: 80%;
+    margin: 15px auto;
+  }
+}

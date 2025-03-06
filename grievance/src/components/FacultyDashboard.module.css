@@ -1,0 +1,145 @@
+/* 📌 Container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e3f2fd;
+}
+
+/* 📌 Sidebar */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(135deg, #6a0572, #38036a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+  width: 240px;
+}
+
+/* 📌 Navigation */
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.navList li {
+  margin-bottom: 12px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 12px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8e44ad, #6a0572);
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navLink:hover,
+.navLink.active {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  transform: translateX(5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 📌 Logout Button */
+.logout {
+  margin-top: auto;
+}
+
+.logout .btn {
+  display: block;
+  padding: 12px;
+  color: white;
+  background: linear-gradient(135deg, #ff3d00, #dd2c00);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout .btn:hover {
+  background: linear-gradient(135deg, #ff6f00, #e65100);
+  transform: scale(1.05);
+}
+
+/* 📌 Main Content */
+.content {
+  flex: 1;
+  padding: 25px;
+  background-color: #f1f8e9;
+}
+
+/* 📌 Faculty Details */
+.facultyDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.facultyPhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 4px solid #ff9800;
+  transition: transform 0.3s ease-in-out;
+}
+
+.facultyPhoto:hover {
+  transform: scale(1.1);
+}
+
+/* 📌 Faculty Info */
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.facultyName {
+  font-size: 1.6em;
+  color: #4a148c;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.facultyInfo {
+  font-size: 1em;
+  color: #616161;
+}
+
+/* 📌 Welcome Message */
+.welcomeMessage {
+  color: #1a237e;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.welcomeMessage:hover {
+  background: #ede7f6;
+  transform: scale(1.02);
+}

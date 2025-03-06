@@ -1,0 +1,142 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+/* Container for the login/sign-up form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4c83ff, #1c3faa);
+}
+
+/* Card styling for the login/signup form */
+.login-card {
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Main heading (institution name) */
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #1c3faa;
+  margin-bottom: 10px;
+}
+
+/* Form heading (login/signup) */
+h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group container */
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #4c83ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 131, 255, 0.5);
+}
+
+/* Error message styling */
+.error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Button styling for login/sign-up */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #4c83ff, #1c3faa);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #3a72e8, #162e7c);
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Toggle link for switching between login and sign-up */
+.toggle-link {
+  color: #4c83ff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+.toggle-link:hover {
+  color: #1c3faa;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 25px;
+  }
+}

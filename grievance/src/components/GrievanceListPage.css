@@ -1,0 +1,109 @@
+/* GrievanceListPage.css */
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Header Styling */
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+/* Hover Effect */
+tr:hover {
+  background: #e9f5ff;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Status Column Styling */
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Solved Status */
+.status.solved {
+  color: #28a745; /* Green */
+}
+
+/* Pending Status */
+.status.pending {
+  color: #ffc107; /* Yellow */
+}
+
+/* Rejected Status */
+.status.rejected {
+  color: #dc3545; /* Red */
+}
+
+/* Unknown Status */
+.status.unknown {
+  color: #6c757d; /* Gray */
+}

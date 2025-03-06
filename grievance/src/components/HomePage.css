@@ -1,0 +1,85 @@
+/* Home Container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4c83ff, #1c3faa);
+}
+
+/* Home Card */
+.home-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.home-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* College Logo */
+.college-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.college-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Heading */
+h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #1c3faa;
+  margin-bottom: 15px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Home Buttons */
+.home-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  color: white;
+  background: linear-gradient(135deg, #0404ff, #0303c4);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+  background: linear-gradient(135deg, #0303c4, #02026f);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .home-card {
+    width: 90%;
+    padding: 25px;
+  }
+}
