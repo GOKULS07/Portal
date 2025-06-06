@@ -31,7 +31,7 @@ const GrievanceFormPage = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/grievances', grievanceData);
+      const response = await axios.post('https://portal-9dns.onrender.com/api/grievances', grievanceData);
       console.log('Grievance submitted:', response.data);
       
       // Show success alert
