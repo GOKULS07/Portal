@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './GrievanceListPage.css';
 
-const API_URL = 'http://localhost:5000/api/grievances'; // Backend URL
+const API_URL = 'https://portal-9dns.onrender.com/api/grievances'; // Backend URL
 
 const GrievanceListPage = () => {
   const [grievances, setGrievances] = useState([]);
