@@ -8,7 +8,7 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: "http://localhost:3000",
+   origin: ["https://portal-gules-beta.vercel.app"],
   credentials: true,
 };
 app.use(cors(corsOptions));
