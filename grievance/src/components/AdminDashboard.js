@@ -11,7 +11,8 @@ const AdminDashboard = () => {
   const [error, setError] = useState(null);
 
   const fetchStats = useCallback(() => {
-    fetch('http://localhost:5000/api/grievances/count')
+    fetch('https://portal-9dns.onrender.com/api/grievances/count')
+
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch grievance counts');
         return res.json();
